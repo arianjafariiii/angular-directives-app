@@ -14,6 +14,6 @@ import { AuthDirective } from './auth/auth.directive';
 })
 export class AppComponent {
   private authService = inject(AuthService);;
-
+  
   isAdmin = computed(() => this.authService.activePermission() === 'admin')
 }
